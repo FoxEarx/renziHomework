@@ -1,40 +1,21 @@
 <template>
   <div>
-    <button @click="skinAll">换肤</button>
-    <div class="todoapp">
-      <todo-header></todo-header>
-      <todo-main></todo-main>
-      <todo-footer></todo-footer>
-    </div>
+    <QGprogress title="60%" color="red" textAlign="center" borderRadius="8px">
+      <span>😃😃😃</span>
+    </QGprogress>
   </div>
 </template>
 
 <script>
-import TodoFooter from './components/TodoFooter.vue' // shift + alt + 下
-import TodoHeader from './components/TodoHeader.vue' // shift + alt + 下
-import TodoMain from './components/TodoMain.vue' // shift + alt + 下
-import { createNamespacedHelpers } from 'vuex'
-const { mapActions: mapskinActions } = createNamespacedHelpers('skin')
 export default {
   data() {
     return {}
   },
 
-  components: {
-    TodoFooter,
-    TodoHeader,
-    TodoMain,
-  },
-
   created() {},
 
-  methods: {
-    ...mapskinActions(['AchangeColor']),
-    skinAll() {
-      this.AchangeColor()
-    },
-  },
+  methods: {},
 }
 </script>
 
-<style scoped></style>
+<style scoped lang="less"></style>
